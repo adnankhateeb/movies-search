@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Work Sans", "sans-serif";
+  color: rgb(213, 213, 213);
+}
+
+.peachGradient {
+  background: #eb3349; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f45c43,
+    #eb3349
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f45c43,
+    #eb3349
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+#navbar {
+  top: 0;
+  position: fixed;
+  margin-left: -0.5%;
+  font-size: 1.3rem;
+  /* height: 3rem; */
+  padding: 0.5%;
+  padding-left: 2%;
+  width: 100%;
+  z-index: 5;
+}
+
+#trendingMovies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+  margin: auto;
+  margin-top: 7%;
+  width: 95%;
+  /* justify-content: space-evenly; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 620px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; /* justify-content: space-around; */
+}
+.card:hover {
+  transform: scale(1.04);
+  transition: 300ms;
+}
+
+.poster {
+  width: 100%;
+  height: 78%;
+}
+
+.desc {
+  padding: 0 15px 10px 15px;
+}
