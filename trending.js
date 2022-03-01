@@ -16,36 +16,6 @@ async function getData() {
 
 getData();
 
-// adult: false
-// backdrop_path: "/oQPbZ5e6J9fuAyv4Gl0mMZMIyPI.jpg"
-// genre_ids: (4) [28, 12, 53, 10752]
-// id: 476669
-// media_type: "movie"
-// original_language: "en"
-// original_title: "The King's Man"
-// overview: "As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them."
-// popularity: 470.655
-// poster_path: "/nj5HmHRZsrYQEYYXyAusFv35erP.jpg"
-// release_date: "2021-12-22"
-// title: "The King's Man"
-// video: false
-// vote_average: 6.8
-// vote_count: 465
-
-// backdrop_path: "/sjx6zjQI2dLGtEL0HGWsnq6UyLU.jpg"
-// first_air_date: "2021-12-29"
-// genre_ids: (2) [10759, 10765]
-// id: 115036
-// media_type: "tv"
-// name: "The Book of Boba Fett"
-// origin_country: ['US']
-// original_language: "en"
-// original_name: "The Book of Boba Fett"
-// overview: "Legendary bounty hunter Boba Fett and mercenary Fennec Shand must navigate the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate."
-// popularity: 2712.977
-// poster_path: "/gNbdjDi1HamTCrfvM9JeA94bNi2.jpg"
-// vote_average: 8.3
-// vote_count: 822
 
 let populate = (movies) => {
 
@@ -92,3 +62,8 @@ let populate = (movies) => {
 
     })
 }
+
+let homeBtn = document.getElementById('home')
+homeBtn.addEventListener('click', () => {
+    window.location.href = 'index.html'
+})

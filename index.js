@@ -114,3 +114,8 @@ function errorfunction123() {
 
 
 }
+
+let trendingBtn = document.getElementById('trending')
+trendingBtn.addEventListener('click', () => {
+    window.location.href = 'trending.html'
+})
